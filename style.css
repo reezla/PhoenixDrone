@@ -1,8 +1,285 @@
+:root {
+    --herolettercolor: #5F5B5B;
+    --lettercolor: #D0D0D0;  
+    --titlecolor: #BFD1E1;
+}
 body {
     background: #2B2B2B;
     font-family: 'Share Tech', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    
 }
 
 video {
-    width: 40%;
+    display: none;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+header {
+   margin: 0;
+}
+
+.start {
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(33,59,134,1) 45%, rgba(1,1,9,1) 100%);
+}
+
+.title {
+    color: var(--titlecolor);
+    margin:auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.start img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.mobile-hero-img {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(/PhoenixDrone/Assets/drone-3419851_1920.jpg);
+    height: 300px;
+    color: var(--lettercolor);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    
+}
+
+h1 {
+    
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+
+.nav-list , .nav-icons {
+    display: none;
+}
+
+.ash-1 img {
+    display: flex;
+   margin: auto;
+}
+
+.ash-1-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.ash-1 h2, h2, a {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color:var(--lettercolor);
+    text-decoration: none;
+}
+
+.drones {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 0px;
+}
+
+.drones figure {
+    position: relative;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drones figure h2 {
+    position: absolute;
+    margin: auto;
+    padding:5px;
+    font-weight: 300; 
+}
+
+
+.drones figure a:hover {
+    color:black;
+    background-color: var(--titlecolor);
+    border-radius: 9px;
+    transition: 0.2s;
+}
+
+.drones img {
+    max-width: 100%;
+    max-height: 250px;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    margin-block-end: 0px;
+}
+
+.img1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: url(/PhoenixDrone/Assets/beach-4821375__340.jpg);
+    background-position: 80%;
+    
+}
+
+.img2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(/PhoenixDrone/Assets/new-york-690214__340.webp);
+    background-position: 90% center;
+}
+.img3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background: url(/PhoenixDrone/Assets/aloha-sea.jpeg);
+    background-position: center;
+}
+.img4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: url(/PhoenixDrone/Assets/riga-2935034__340.jpg);
+    background-position: 68% 60%;
+}
+.img5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background:url(/PhoenixDrone/Assets/panorama-1744355__340.jpg);
+    background-position: 30%; 
+    
+
+}
+
+.img6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background:  url(/PhoenixDrone/Assets/karkonosze-4563319_1920.jpg);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    zoom: .3;
+}
+
+.locations {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #00112C;
+    
+
+}
+
+.locations h2 {
+    margin-block-start: 0px;
+    padding: 30px 0px 0px 0px;
+    font-weight: 400;
+    
+}
+
+.locations p {
+    color: var(--titlecolor);
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    max-width: 470px;
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.wrapper h2 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.wrapper h3 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+hr {
+    border: 1px solid var(--herolettercolor);
+    border-radius: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 8px;
+    margin-bottom: 10px;
+
+}
+
+
+@media screen and (min-width: 680px) {
+    video {
+        display: inherit;
+    }
+
+    .nav-list , .nav-icons {
+        display: inherit;
+    }
+}
+
+
+/* 
+
+- check validator
+- make top menu
+- adjust for desktop
+- tune style for mobile
+
+*/
+
+    
