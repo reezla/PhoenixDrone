@@ -79,7 +79,7 @@ h1 {
 
 .ash-1 img {
     display: flex;
-   margin: auto;
+    margin: auto;   
 }
 
 .ash-1-icons {
@@ -91,6 +91,9 @@ h1 {
     padding: 0px 10px 0px 10px;
 }
 
+
+
+
 .ash-1 h2, h2, a {
     
     text-align: center;
@@ -98,17 +101,25 @@ h1 {
     margin-right: auto;
     color:var(--lettercolor);
     text-decoration: none;
+    
 }
+
+.ash-1 p { 
+    color:var(--lettercolor);
+    padding: 10px;
+    text-align: justify;
+}
+
 
 .drones {
     display: flex;
     flex-direction: column;
     margin-inline-start: 0px;
+   
 }
 
 .drones figure {
     position: relative;
-    margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -123,7 +134,6 @@ h1 {
     font-weight: 300; 
 }
 
-
 .drones figure a:hover {
     color:black;
     background-color: var(--titlecolor);
@@ -132,9 +142,20 @@ h1 {
 }
 
 .drones img {
+    
     max-width: 100%;
     max-height: 250px;
     margin: auto;
+    border-radius: 10px;
+    box-shadow:2px 0px 50px rgb(14, 12, 12);  
+    transition:  0.2s all ease-in-out ;
+}
+
+.drones img:hover {
+    transform: scale(1.1);
+    -ms-transform:scale(1.1);
+    -webkit-transform:scale(1.1);    
+    
 }
 
 .gallery {
@@ -267,9 +288,89 @@ hr {
         display: inherit;
     }
 
-    .nav-list , .nav-icons {
-        display: inherit;
+    
+    nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
+
+    .start {
+        width: 25%;
+        background: none;
+    }
+
+    .start p {
+        padding-right: 0px;
+    }
+    .start img {
+        margin-left: -5%;
+    }
+
+    .mobile-hero-img {
+        display: none;
+    }
+
+    .nav-list , .nav-icons {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding-inline-start: 0px;
+        color:var(--titlecolor);
+        font-weight: lighter;
+        font-size: 1.5rem;   
+    }
+
+    .nav-list li {
+        justify-content: space-between;
+        margin:.8rem;
+    }
+
+    .nav-list a {
+        color: var(--titlecolor)
+    }
+
+    .nav-icons li {
+        justify-content: space-between;
+        margin:.5rem;
+        padding-right: 0.5rem;
+    } 
+
+    .ash-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ash-1 h2 { 
+        justify-self: center;
+
+    }
+
+    .ash-1 img {
+        /*treba da se zomira ili sta god*/
+        margin-top: 10px;
+    }
+
+    .ash-1 p {
+        max-width: 50%;
+    }
+    
+    .ash-1-icons {
+        
+        margin: .5rem;
+        margin-left: auto;
+        
+    }
+    
+    .ash-1-icons li img {
+        padding: 7px;
+    }
+
+    .text-icons {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
 }
 
 
@@ -279,6 +380,13 @@ hr {
 - make top menu
 - adjust for desktop
 - tune style for mobile
+- fix .drones article da bude do ivica u mobile view
+
+-za desktop view da bude text preko videa
+-prilagoditi prema figmi za -ll-
+
+-ubaciti neke hower opcije jos, transitions, shadows....
+
 
 */
 
