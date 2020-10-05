@@ -8,8 +8,6 @@ body {
     font-family: 'Share Tech', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
-    
-    
 }
 
 video {
@@ -17,6 +15,10 @@ video {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.video-text {
+    display:none;
 }
 
 header {
@@ -284,15 +286,46 @@ hr {
 
 
 @media screen and (min-width: 680px) {
+
+    
+    .video-container {
+        position: relative;
+    }
+
     video {
         display: inherit;
+        height: auto;
+        box-shadow:2px 0px 50px rgb(14, 12, 12);
+    }
+
+    .text-wrapper {
+        
+        position: absolute;
+        top: 0rem; 
+        right: 17rem; 
+        bottom: 0rem; 
+        left: 0rem;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        
+        
+    }
+    
+    .video-text {
+        display: inherit;
+        margin: auto;
+        font-size: 2.5rem;
+        color: white;
+        transition: ease-in;
+       
     }
 
     
     nav {
         display:flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .start {
@@ -311,6 +344,10 @@ hr {
         display: none;
     }
 
+    .ash-1 h2, h2, a {
+         padding-right: 15px; 
+    }
+
     .nav-list , .nav-icons {
         display: flex;
         align-items: center;
@@ -319,6 +356,10 @@ hr {
         color:var(--titlecolor);
         font-weight: lighter;
         font-size: 1.5rem;   
+    }
+
+    ul .nav-list {
+        padding-right: 15px;
     }
 
     .nav-list li {
@@ -334,32 +375,35 @@ hr {
         justify-content: space-between;
         margin:.5rem;
         padding-right: 0.5rem;
+        transform: scale(0.7);
     } 
 
     .ash-1 {
         display: flex;
         flex-direction: column;
-    }
-
-    .ash-1 h2 { 
-        justify-self: center;
-
+        background-image: url(/PhoenixDrone/Assets/black-drone.png);
+        background-repeat: no-repeat;
+        background-position: 50% 35%;
+        background-size: 75%;
+        margin-block-start: 1.5rem;
     }
 
     .ash-1 img {
-        /*treba da se zomira ili sta god*/
         margin-top: 10px;
+        z-index: 1;
+        max-width: 100%;
+    }
+
+    section article .ash-drone-mobile {
+        display: none;
     }
 
     .ash-1 p {
-        max-width: 50%;
+        max-width: 35%;
     }
     
     .ash-1-icons {
-        
-        margin: .5rem;
-        margin-left: auto;
-        
+        margin: .5rem;  
     }
     
     .ash-1-icons li img {
@@ -369,7 +413,52 @@ hr {
     .text-icons {
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 35%;
+        justify-content: space-evenly;
+        max-height: 80%;
     }
+
+    .drones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 1rem 3rem 1rem;
+        
+    
+    }
+
+    .drones .first {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }
+    
+    .locations {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .locations h2, p, a {
+        width: 33%;
+        align-self: center;
+    }
+
+    
+
+    .wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .wrapper h3 {
+        font-size: 0.8rem;
+    }
+
+    .bottom {
+        font-size: 0.5rem;
+    }
+
+
 
 }
 
