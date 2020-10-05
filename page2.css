@@ -31,6 +31,11 @@ h2 {
     transition:  0.2s all ease-in-out ;
 }
 
+.store-wrapper figure:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
 p {
     color:var(--lettercolor);
     text-align: center;
