@@ -12,7 +12,7 @@ body {
     color: white;
 }  
 
-h2 {
+.store-text {
     text-align: center;
     color: var(--titlecolor);
     font-weight: 300;
@@ -36,7 +36,7 @@ h2 {
     transform: scale(1.1);
 }
 
-p {
+.store-wrapper figure a p {
     color:var(--lettercolor);
     text-align: center;
     display: block;
@@ -45,10 +45,9 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-a  {
-    text-decoration-color: var(--lettercolor);
-    
 
+.store-wrapper figure a  {
+    text-decoration-color: var(--lettercolor);
 }
 
 
